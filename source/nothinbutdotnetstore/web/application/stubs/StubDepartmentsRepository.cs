@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using nothinbutdotnetstore.web.application.catalogbrowsing;
@@ -10,5 +11,10 @@ namespace nothinbutdotnetstore.web.application.stubs
     {
       return Enumerable.Range(1, 100).Select(x => new DepartmentItem{name = x.ToString("Department 0")});
     }
+
+      public IEnumerable<DepartmentItem> get_departments_of(DepartmentItem department)
+      {
+          throw new NotImplementedException();
+      }
   }
 }
