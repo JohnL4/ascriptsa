@@ -41,5 +41,7 @@ namespace nothinbutdotnetstore.specs
             static HttpContext an_incoming_http_context;
             static ICreateRequests request_factory;
         }
+
+
     }
 }
