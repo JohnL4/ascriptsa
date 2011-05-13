@@ -24,7 +24,8 @@ namespace nothinbutdotnetstore.web.core
 
         public IProcessOneUniqueRequest get_the_command_that_can_process(IContainRequestInformation request)
         {
-            return handlers.FirstOrDefault(x => x.can_handle(request)) ?? missing_handler_factory();
+            IProcessOneUniqueRequest handler =  handlers.FirstOrDefault(x => x.can_handle(request)) ?? missing_handler_factory();
+            return new ProfilingHandler(handler);
         }
     }
 }
