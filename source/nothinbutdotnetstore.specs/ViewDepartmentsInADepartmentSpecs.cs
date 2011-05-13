@@ -8,15 +8,15 @@ using System.Collections.Generic;
 
 namespace nothinbutdotnetstore.specs
 {   
-    public class ViewDepartementsInADepartmentSpecs
+    public class ViewDepartmentsInADepartmentSpecs
     {
         public abstract class concern : Observes<IProcessApplicationSpecificBehaviour,
-                                            ViewTheDepartmentsInADepartment>
+                                            ViewTheDepartmentsInADepartments>
         {
         
         }
 
-        [Subject(typeof(ViewTheDepartmentsInADepartment))]
+        [Subject(typeof(ViewTheDepartmentsInADepartments))]
         public class when_run : concern
         {
           Establish c = () =>

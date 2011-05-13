@@ -81,7 +81,8 @@
     <Compile Include="web\application\catalogbrowsing\DepartmentItem.cs" />
     <Compile Include="web\application\catalogbrowsing\ProductItem.cs" />
     <Compile Include="web\application\catalogbrowsing\ViewProductsInADepartment.cs" />
-    <Compile Include="web\application\catalogbrowsing\ViewTheDepartmentsInADepartment.cs" />
+    <Compile Include="web\application\catalogbrowsing\ViewReportModel.cs" />
+    <Compile Include="web\application\catalogbrowsing\ViewTheDepartmentsInADepartments.cs" />
     <Compile Include="web\application\catalogbrowsing\ViewTheMainDepartmentsInTheStore.cs" />
     <Compile Include="web\application\IFindInformationInTheStoreCatalog.cs" />
     <Compile Include="web\application\IFindProducts.cs" />
@@ -95,12 +96,14 @@
     <Compile Include="web\core\IDisplayData.cs" />
     <Compile Include="web\core\IDisplayReportModels.cs" />
     <Compile Include="web\core\IFindSpecificRequestHandlers.cs" />
+    <Compile Include="web\core\IncomingRequestIsFor.cs" />
     <Compile Include="web\core\IncomingRequestMeetsCriteria.cs" />
     <Compile Include="web\core\IProcessApplicationRequests .cs" />
     <Compile Include="web\core\IProcessApplicationSpecificBehaviour .cs" />
     <Compile Include="web\core\IProcessAUniqueRequest .cs" />
     <Compile Include="web\core\MissingHandlerFactory.cs" />
     <Compile Include="web\core\ProcessOneUniqueRequest.cs" />
+    <Compile Include="web\core\stubs\GetTheMainDepartments.cs" />
     <Compile Include="web\core\stubs\Stub.cs" />
     <Compile Include="web\core\stubs\StubMissingRequestHandler.cs" />
     <Compile Include="web\core\stubs\StubReportEngine.cs" />

@@ -7,7 +7,7 @@ namespace nothinbutdotnetstore.web.application.catalogbrowsing
   public class ViewProductsInADepartment : IProcessApplicationSpecificBehaviour
   {
     IDisplayReportModels report_engine;
-    IFindInformationInTheStoreCatalog information_in_the_store_catalog_repository;
+    IFindInformationInTheStoreCatalog store_catalog;
 
     public ViewProductsInADepartment()
         : this(Stub.with<StubReportEngine>(),
@@ -16,15 +16,15 @@ namespace nothinbutdotnetstore.web.application.catalogbrowsing
     }
 
     public ViewProductsInADepartment(IDisplayReportModels report_engine,
-                                     IFindInformationInTheStoreCatalog information_in_the_store_catalog_repository)
+                                     IFindInformationInTheStoreCatalog store_catalog)
     {
       this.report_engine = report_engine;
-      this.information_in_the_store_catalog_repository = information_in_the_store_catalog_repository;
+      this.store_catalog = store_catalog;
     }
 
     public void run(IContainRequestInformation request)
     {
-      report_engine.display(information_in_the_store_catalog_repository.get_products_in(request.map<DepartmentItem>()));
+      report_engine.display(store_catalog.get_products_in(request.map<DepartmentItem>()));
     }
   }
 }

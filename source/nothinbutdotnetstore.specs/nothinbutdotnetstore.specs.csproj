@@ -122,7 +122,7 @@
     <Compile Include="ProcessOneUniqueRequestSpecs.cs" />
     <Compile Include="SomeClass.cs" />
     <Compile Include="utility\ObjectFactory.cs" />
-    <Compile Include="ViewDepartementsInADepartmentSpecs.cs" />
+    <Compile Include="ViewDepartmentsInADepartmentSpecs.cs" />
     <Compile Include="ViewProductsInADepartmentSpecs.cs" />
     <Compile Include="ViewTheMainDepartmentsInTheStoreSpecs.cs" />
   </ItemGroup>
